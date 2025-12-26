@@ -1,0 +1,51 @@
+partial alphanumeric_keys modifier_keys
+xkb_symbols "br_colemak-dhm" {
+    name[Group1]= "Portuguese (Brazil) - Colemak-DHm";
+
+    include "br(abnt2)"
+//    include "extend(basic)"
+
+    //                  BASE   |       SHIFT     |    ALT GR     |    ALT GR SHIFT
+
+    key <TLDE> { [   dead_grave,           grave,    asciitilde,      asciicircum ] }; // ' "
+    key <AD03> { [            f,               F,       dstroke,      ordfeminine ] }; // E
+    key <AD04> { [            p,               P,         thorn,            THORN ] }; // R
+    key <AD05>	{ [           b,               B,  leftdoublequotemark, leftsinglequotemark ]	}; // T
+    key <AD06>	{ [ bracketleft,       braceleft,   ordfeminine,      dead_macron ]	}; // Y
+    key <AD07>	{ [           j,               J,     dead_hook,        dead_horn ]	}; // U
+    key <AD08>	{ [           l,               L,       lstroke,          Lstroke ]	}; // I
+    key <AD09>	{ [           u,               U,     downarrow,          uparrow ]	}; // O
+    key <AD10>	{ [           y,               Y,     leftarrow,              yen ]	}; // P
+    key <AD11> { [   apostrophe,        quotedbl,       notsign,          notsign ] }; // ´ `
+    key <AD12> { [   dead_acute, dead_circumflex,    dead_tilde,            acute ] }; // [ { ª ¯
+
+    key <AC01>	{ [            a,          A,        U00E3,         U00C3 ]	}; // A
+    key <AC02>	{ [            r,          R,   registered,    registered ]	}; // S
+    key <AC03>	{ [            s,          S,       ssharp,         U1E9E ]	}; // D
+    key <AC04>	{ [            t,          T,       tslash,        Tslash ]	}; // F
+    key <AC05>	{ [            g,          G,          eng,           ENG ]	}; // G
+    key <AC06>	{ [ bracketright, braceright,    masculine,     masculine ]	}; // H
+    key <AC07>	{ [         k,          K,             kra,     ampersand ] }; // J
+    key <AC08>	{ [         n,          N, rightdoublequotemark, rightsinglequotemark ]	}; // K
+    key <AC09>	{ [         e,          E,          degree,        degree ]	}; // L
+    key <AC10> { [          i,          I,      rightarrow,      idotless ] }; // Ç
+    key <AC11> { [          o,          O,           U00F5,         U00D5 ] }; // ~ ^
+    key <BKSL> { [  semicolon,      colon,   dead_belowdot, dead_abovedot ] }; // ] } º
+
+    key <LSGT> { [           z,           Z,    guillemotleft,         less ] }; // \|ˇ˘
+    key <AB01>	{ [          x,           X,   guillemotright,      greater ]	}; // Z
+    key <AB02>	{ [          c,           C,        copyright,    copyright ]	}; // X
+    key <AB03> { [           d,           D,              eth,          ETH ] }; // C
+    key <AB04>	{ [          v,           V, doublelowquotemark,   singlelowquotemark ]	}; // V
+    key <AB05>	{ [  backslash,         bar,       dead_caron,   dead_breve ] }; // B
+    key <AB06>	{ [      slash,    question,           degree, questiondown ]	}; // N
+    key <AB07> { [           m,           M,               mu,           mu ] }; // M
+    key <AB08>	{ [          h,           H,          hstroke,      Hstroke ]	}; // bullet , < • ×
+    key <AB09>	{ [      comma,        less,            U2022,     multiply ]	}; // . > · ÷
+    key <AB10> { [      period,     greater,   periodcentered,     division ] }; // ; : ˙ ̣̣
+    key <AB11> { [    ccedilla,    Ccedilla,       dead_acute, dead_doubleacute ] }; // /?°¿
+
+//    key <CAPS> { [ ISO_Level5_Shift, Caps_Lock, Caps_Lock, Caps_Lock ] }; // Ext Key
+//    modifier_map Mod3 { ISO_Level5_Shift };
+
+};
