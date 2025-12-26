@@ -310,35 +310,35 @@ xkb_symbols "lv5" {
 //                    PtrBtn(button=4)            , PtrBtn(button=4)              ,   // PtrWhBtUp/Ri
 //                    NoAction()                  , NoAction()                    ] ,
 //                 repeat=yes     };  // W                // (ScrlR/L & Btn 6/7 may cause crashes now?!)
-    key <AD03> { symbols[Group1]=[Any       , Any       , Any       , Any       ,   // E F
-                    f                           , f                             ,   // Ctrl F
+    key <AD03> { symbols[Group1]=[Any       , Any       , Any       , Any       ,   // E
+                    f                           , f                             ,   // F
                     End                         , KP_End                        ] , // End
                  actions[Group1]=[NoAction(), NoAction(), NoAction(), NoAction(),
-                    SetMods(mods=Control, key=<AD03>), SetMods(mods=Control, key=<AD03>),     // <Ctrl + AD03 (F)> (‡‡)
+                    Redirect(key=<I166>,clearmods=LevelFive), Redirect(key=<I166>,clearmods=LevelFive),     // <I166>(‡‡)
                     NoAction()                  , NoAction()                    ] ,
                  repeat=yes     };  // QWE E, Cmk F
-//    key <AD04> { symbols[Group1]=[Any       , Any       , Any       , Any       ,   // R P
+//    key <AD04> { symbols[Group1]=[Any       , Any       , Any       , Any       ,   // R
 //                    XF86Forward                 , XF86Forward                   ,   // BrFwd
 //                    Delete                      , KP_Delete                     ] , // Del
 //                 actions[Group1]=[NoAction(), NoAction(), NoAction(), NoAction(),
 //                    Redirect(key=<I167>,clearmods=LevelFive), Redirect(key=<I167>,clearmods=LevelFive),     // <I167>(‡‡)
 //                    NoAction()                  , NoAction()                    ] ,
 //                 repeat=yes     };  // QWE R, Cmk P
-//    key <AD05> { symbols[Group1]=[Any       , Any       , Any       , Any       ,   // T B
+//    key <AD05> { symbols[Group1]=[Any       , Any       , Any       , Any       ,   // T
 //                    Pointer_Up                  , Pointer_Up                    ,   // PtrUp(††)
 //                    Escape                      , Escape                        ] , // Esc
 //                 actions[Group1]=[NoAction(), NoAction(), NoAction(), NoAction(),
 //                    MovePtr(x=+0,y=-8)   , MovePtr(x=+0,y=-8)                   ,   // PtrUp(††)
 //                    Redirect(key=<ESC>,clearmods=LevelFive) , Redirect(key=<ESC>,clearmods=LevelFive) ] ,   // <ESC>
 //                 repeat=yes     };  // QWE T, Cmk G
-//    key <AD06> { symbols[Group1]=[Any       , Any       , Any       , Any       ,   // Y [
+//    key <AD06> { symbols[Group1]=[Any       , Any       , Any       , Any       ,   // Y
 //                    Page_Up                     , Page_Up                       ,   // PgUp
 //                    Page_Up                     , KP_Prior                      ] , // PgUp   / KP_PgUp
 //                 actions[Group1]=[NoAction(), NoAction(), NoAction(), NoAction(),
 //                    Redirect(key=<PGUP>,clearmods=LevelFive), Redirect(key=<PGUP>,clearmods=LevelFive),     // <PGUP>
 //                    Redirect(key=<PGUP>,clearmods=LevelFive), NoAction()        ] ,
 //                 repeat=yes     };  // QWE Y, Cmk J
-    key <AD07> { symbols[Group1]=[Any       , Any       , Any       , Any       ,   // U J
+        key <AD07> { symbols[Group1]=[Any       , Any       , Any       , Any       ,   // U J
                     Page_Up                     , Page_Up                       ,   // PgUp
                     Page_Up                     , KP_Prior                      ] , // PgUp   / KP_PgUp
                  actions[Group1]=[NoAction(), NoAction(), NoAction(), NoAction(),
@@ -373,14 +373,14 @@ xkb_symbols "lv5" {
                     Redirect(key=<DELE>,clearmods=LevelFive), Redirect(key=<DELE>,clearmods=LevelFive),     // <DELE>
                     NoAction()                  , NoAction()                    ] ,
                  repeat=yes     };  // [ {
-//    key <AD12> { symbols[Group1]=[Any       , Any       , Any       , Any       ,   // ] } ´
+//    key <AD12> { symbols[Group1]=[Any       , Any       , Any       , Any       ,   // ] }
 //                    Insert                      , Insert                        ,   // Ins
 //                    parenright                  , braceright                    ] , //  )
 //                 actions[Group1]=[NoAction(), NoAction(), NoAction(), NoAction(),
 //                    Redirect(key=<INS>,clearmods=LevelFive) , Redirect(key=<INS>,clearmods=LevelFive) ,     // <INS>
 //                    NoAction()                  , NoAction()                    ] ,
 //                 repeat=yes     };  // ] }
-//    key <BKSL> { symbols[Group1]=[Any       , Any       , Any       , Any       ,   // \ | ;
+//    key <BKSL> { symbols[Group1]=[Any       , Any       , Any       , Any       ,   // \ |
 //                    XF86Favorites               , XF86MyComputer                ,   // BrFav
 //                    colon                       , bar                           ] , //  :
 //                 actions[Group1]=[NoAction(), NoAction(), NoAction(), NoAction(),
@@ -398,21 +398,21 @@ xkb_symbols "lv5" {
                     SetMods(mods=Alt)           , SetMods(mods=Alt)             ,   // Alt mod
                     NoAction()                  , NoAction()                    ] ,
                  repeat=yes     };  // QWE A, Cmk A
-//    key <AC02> { symbols[Group1]=[Any       , Any       , Any       , Any       ,   // S R
+//    key <AC02> { symbols[Group1]=[Any       , Any       , Any       , Any       ,   // S
 //                    XF86ScrollDown              , XF86ScrollDown                ,   // ScrlDown(††)
 //                    Down                        , KP_Down                       ] , //  ↓
 //                 actions[Group1]=[NoAction(), NoAction(), NoAction(), NoAction(),
 //                    PtrBtn(button=5)            , PtrBtn(button=5)              ,   // PtrWhBtDn/Le
 //                    NoAction()                  , NoAction()                    ] ,
 //                 repeat=yes     };  // QWE S, Cmk R     // (ScrlR/L & Btn 6/7 may cause crashes now?!)
-    key <AC03> { symbols[Group1]=[Any       , Any       , Any       , Any       ,   // D S
+    key <AC03> { symbols[Group1]=[Any       , Any       , Any       , Any       ,   // D
                     Shift_L                     , Shift_L                       ,   // <LFSH>
                     Right                       , KP_Right             ], //  →
                  actions[Group1]=[NoAction(), NoAction(), NoAction(), NoAction(),
                     SetMods(mods=Shift)         , SetMods(mods=Shift)           ,   // Shift mod
                     NoAction()                  , NoAction()                    ] ,
                  repeat=yes     };  // QWE D, Cmk S
-    key <AC04> { symbols[Group1]=[Any       , Any       , Any       , Any       ,   // F T
+    key <AC04> { symbols[Group1]=[Any       , Any       , Any       , Any       ,   // F
                     Control_L                   , Control_L                     ,   // <LCTL>
                     BackSpace                   , BackSpace                     ] , // Back
                  actions[Group1]=[NoAction(), NoAction(), NoAction(), NoAction(),
@@ -426,7 +426,7 @@ xkb_symbols "lv5" {
 //                    MovePtr(x=+0,y=+8)          , MovePtr(x=+0,y=+8)            ,   // PtrDn(††)
 //                    NoAction()                  , NoAction()                    ] ,
 //                 repeat=yes     };  // QWE G, Cmk D
-//    key <AC06> { symbols[Group1]=[Any       , Any       , Any       , Any       ,   // H ]
+//    key <AC06> { symbols[Group1]=[Any       , Any       , Any       , Any       ,   // H
 //                    Page_Down                   , Page_Down                     ,   // PgDn
 //                    Page_Down                   , KP_Next                       ] , // PgDn   / KP_PgDn
 //                 actions[Group1]=[NoAction(), NoAction(), NoAction(), NoAction(),
@@ -532,13 +532,13 @@ xkb_symbols "lv5" {
 //                    PtrBtn(button=3)            , PtrBtn(button=3)              ,   // PtrRBt
 //                    NoAction()                  , NoAction()                    ] ,
 //                 repeat=yes     };  // M
-//    key <AB08> { symbols[Group1]=[Any       , Any       , Any       , Any       ,   // , <
-//                    Pointer_Left                , Pointer_Left                  ,   // PtrLe(††)
-//                    KP_0                        , U21D5                         ] , // KP_0   /   ↕ ⇕
-//                 actions[Group1]=[NoAction(), NoAction(), NoAction(), NoAction(),
-//                    MovePtr(x=-8,y=+0)          , MovePtr(x=-8,y=+0)            ,   // PtrLe(††)
-//                    NoAction()                  , NoAction()                    ] ,
-//                 repeat=yes     };  // , <
+    key <AB08> { symbols[Group1]=[Any       , Any       , Any       , Any       ,   // , < H
+                    Return                      , Return                        ,   // Return
+                    Any                         , Any                         ] , // Any
+                 actions[Group1]=[NoAction(), NoAction(), NoAction(), NoAction(),
+                    Redirect(key=<RTRN>,clearmods=LevelFive), Redirect(key=<RTRN>,clearmods=LevelFive),     // <RTRN>
+                    NoAction()                  , NoAction()                    ] ,
+                 repeat=yes     };  // , <
 //    key <AB09> { symbols[Group1]=[Any       , Any       , Any       , Any       ,   // . >
 //                    Pointer_Right               , Pointer_Right                 ,   // PtrRi(††)
 //                    KP_Decimal                  , colon                         ] , // KP_. :
@@ -553,13 +553,13 @@ xkb_symbols "lv5" {
 
 //  NOTE: The Space key should preserve the Shift state; it's special because both levels have the same symbol.
 //    - One might use a key type that has the 'preserve[Shift] = Shift;' property. However, I fix it directly.
-    key <SPCE> { symbols[Group1]=[Any       , Any       , Any       , Any       ,   // Space
-                    Return                      , Return                        ,   // Enter
-                    space                       , nobreakspace                  ] , // Space
-                 actions[Group1]=[NoAction(),SetMods(mods=Shift),NoAction(),SetMods(mods=Shift),
-                    Redirect(key=<RTRN>,clearmods=LevelFive), Redirect(key=<RTRN>,clearmods=LevelFive),     // <RTRN>
-                    NoAction()                  , NoAction()                    ] ,
-                 repeat=yes     };  // Space
+//    key <SPCE> { symbols[Group1]=[Any       , Any       , Any       , Any       ,   // Space
+//                    Return                      , Return                        ,   // Enter
+//                    space                       , nobreakspace                  ] , // Space
+//                 actions[Group1]=[NoAction(),SetMods(mods=Shift),NoAction(),SetMods(mods=Shift),
+//                    Redirect(key=<RTRN>,clearmods=LevelFive), Redirect(key=<RTRN>,clearmods=LevelFive),     // <RTRN>
+//                    NoAction()                  , NoAction()                    ] ,
+//                 repeat=yes     };  // Space
 
 //  §§: XCV Cut/Copy/Paste keys seem OK in Firefox but not Gedit!? This seems to be a GTK weakness.
 //    - Some bind fiddling in ~/.gtkrc-2.0 and ~/.config/gtk-3.0/gtk.css can get this working

@@ -3,7 +3,7 @@ xkb_symbols "br_colemak-dhm" {
     name[Group1]= "Portuguese (Brazil) - Colemak-DHm";
 
     include "br(abnt2)"
-//    include "extend(basic)"
+    include "extend(basic)"
 
     //                  BASE   |       SHIFT     |    ALT GR     |    ALT GR SHIFT
 
@@ -45,7 +45,8 @@ xkb_symbols "br_colemak-dhm" {
     key <AB10> { [      period,     greater,   periodcentered,     division ] }; // ; : ˙ ̣̣
     key <AB11> { [    ccedilla,    Ccedilla,       dead_acute, dead_doubleacute ] }; // /?°¿
 
-//    key <CAPS> { [ ISO_Level5_Shift, Caps_Lock, Caps_Lock, Caps_Lock ] }; // Ext Key
-//    modifier_map Mod3 { ISO_Level5_Shift };
+//    key <SPCE> { [ space ] }; // Ext Key
+    key <CAPS> { [ ISO_Level5_Shift, Caps_Lock, Caps_Lock, Caps_Lock ] }; // Ext Key
+    modifier_map Mod3 { ISO_Level5_Shift };
 
 };
